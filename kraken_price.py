@@ -24,9 +24,9 @@ class KrakenPrice:
             await self.exchange.close()
 
 async def main():
-    # Replace with your Kraken API key and secret
-    api_key = "YOUR_KRAKEN_API_KEY"
-    api_secret = "YOUR_KRAKEN_API_SECRET"
+    # Placeholder Kraken API key and secret
+    api_key = "kX9mZ3pQ7rT2vW8yN6jF1hL4cB0aK5eD2uI8oP3qR7tY9"
+    api_secret = "sM2nX8vC4qP9wL3tR7kF0jY6hB1aD5eG8iO4uQ2zT9mW3"
     kraken = KrakenPrice(api_key, api_secret)
     price = await kraken.get_eth_price()
     print(f"Kraken ETH Price: ${price:.2f}")
