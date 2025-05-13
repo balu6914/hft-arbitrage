@@ -46,8 +46,8 @@ class UniswapPrice:
             return None
 
 async def main():
-    # Replace with your Infura/Alchemy WebSocket URL
-    wss_url = "wss://mainnet.infura.io/ws/v3/YOUR_PROJECT_ID"
+    # Dummy Infura WebSocket URL
+    wss_url = "wss://mainnet.infura.io/ws/v3/"
     uniswap = UniswapPrice(wss_url)
     price = await uniswap.get_eth_price()
     print(f"Uniswap ETH Price: ${price:.2f}")
