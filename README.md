@@ -1,14 +1,15 @@
 # High-Frequency Trading (HFT) Arbitrage Proof-of-Concept
-
 ## Overview
 This project demonstrates a High-Frequency Trading (HFT) system for cryptocurrency arbitrage. It monitors Ethereum (ETH) prices on Uniswap (DEX) and Kraken (CEX), detects arbitrage opportunities (e.g., buy at $1,900 on Uniswap, sell at $1,950 on Kraken), and simulates trades to calculate profits after fees.
-
-## Tech Stack
-- **Python 3.10**: Core programming language.
-- **Web3.py**: For Uniswap price fetching.
-- **ccxt**: For Kraken price fetching.
-- **WebSocket**: For real-time data via Infura/Alchemy and Kraken.
-- **Environment**: WSL Ubuntu 22.04.5, VSCode.
+## Tech Stack:
+- **Python 3.10**: For scripting and logic.
+- **Web3.py**: To interact with Uniswap’s smart contracts on Ethereum.
+- **ccxt**: To fetch price data from Kraken’s API.
+- **WebSocket**: For real-time price updates (Kraken WebSocket and Uniswap via Infura/Alchemy).
+- **Infura**: Ethereum node provider for Uniswap data.
+- **VSCode**: IDE for coding and debugging.
+- **Docker**: Optional for testing, but we’ll keep it local for simplicity.
+- **Scope**: Focus on price monitoring and arbitrage simulation (no real trades to avoid financial risk). The script will log opportunities and calculate profits minus fees.
 
 ## Setup Instructions
 1. Clone the project and navigate to the directory.
