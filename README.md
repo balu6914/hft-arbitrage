@@ -10,24 +10,20 @@ This project demonstrates a High-Frequency Trading (HFT) system for cryptocurren
 - **VSCode**: IDE for coding and debugging.
 - **Docker**: Optional for testing, but we’ll keep it local for simplicity.
 - **Scope**: Focus on price monitoring and arbitrage simulation (no real trades to avoid financial risk). The script will log opportunities and calculate profits minus fees.
-
 ## Setup Instructions
 1. Clone the project and navigate to the directory.
 2. Create a virtual environment: `python3 -m venv venv && source venv/bin/activate`.
 3. Install dependencies: `pip install web3 ccxt websocket-client requests`.
 4. Update `main.py` with your Infura/Alchemy WebSocket URL and Kraken API credentials.
 5. Run the script: `python3 main.py`.
-
 ## Features
 - Fetches real-time ETH/USDC prices from Uniswap and Kraken.
 - Detects arbitrage opportunities and calculates profits after fees (Uniswap 0.05%, Kraken 0.16%).
 - Logs trade details for demonstration purposes.
-
 ## Limitations
 - Simulates trades without executing real transactions.
 - Assumes constant trade amount (100 ETH) for simplicity.
 - Requires stable internet and valid API credentials.
-
 ## Future Improvements
 - Add real trade execution with wallet integration.
 - Support multiple trading pairs and exchanges.
