@@ -4,10 +4,10 @@ import asyncio
 from arbitrage import Arbitrage
 
 async def main():
-    # Replace with your credentials
-    uniswap_wss_url = "wss://mainnet.infura.io/ws/v3/YOUR_PROJECT_ID"
-    kraken_api_key = "YOUR_KRAKEN_API_KEY"
-    kraken_api_secret = "YOUR_KRAKEN_API_SECRET"
+    # Placeholder credentials
+    uniswap_wss_url = "wss://mainnet.infura.io/ws/v3/a1b2c3d4e5f67890123456789abcdef0"
+    kraken_api_key = "kX9mZ3pQ7rT2vW8yN6jF1hL4cB0aK5eD2uI8oP3qR7tY9"
+    kraken_api_secret = "sM2nX8vC4qP9wL3tR7kF0jY6hB1aD5eG8iO4uQ2zT9mW3"
 
     arbitrage = Arbitrage(uniswap_wss_url, kraken_api_key, kraken_api_secret)
 
